@@ -1,0 +1,23 @@
+{
+  "name": "imgle",
+  "version": "1.0.0",
+  "description": "convert any image to a twitter blocks emojis (wordle like text) ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marwan Fouda",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technoo0/imgle.git"
+  },
+  "keywords": [
+    "wordle",
+    "image"
+  ],
+  "bugs": {
+    "url": "https://github.com/technoo0/imgle/issues"
+  },
+  "homepage": "https://github.com/technoo0/imgle#readme"
+}
