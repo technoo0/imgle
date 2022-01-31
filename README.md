@@ -8,7 +8,7 @@
   <a href="https://stupefied-darwin-37d742.netlify.app/">Demo app</a>
 </h3>
 <p align="center">
-  <b>Convert</b>  any image to a twitter blocks emojis (Wardle like text) 
+  <b>Convert</b>  any image to a twitter blocks emojis (Wordle like text) 
 </p>
 <p align="center">
 <img src="https://github.com/technoo0/imgle/blob/main/website/src/assets/twitter.png?raw=true" width="200"  />
