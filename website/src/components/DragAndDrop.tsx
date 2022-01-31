@@ -3,11 +3,13 @@ import { FileUploader } from "react-drag-drop-files";
 import { Grid, Typography } from "@mui/material";
 import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 const fileTypes = ["JPG", "JPEG", "PNG", "GIF"];
-export default function DragAndDrop() {
-  const [file, setFile] = useState<null | File>(null);
-  const handleChange = (newfile: File) => {
-    setFile(newfile);
-  };
+
+interface PropTypes {
+  file: null | File;
+  handleChange: any;
+}
+
+export default function DragAndDrop({ handleChange, file }: PropTypes) {
   return (
     <FileUploader handleChange={handleChange} name="file" types={fileTypes}>
       <Grid
@@ -16,9 +18,9 @@ export default function DragAndDrop() {
           borderStyle: "dashed",
           borderColor: "primary.main",
           borderRadius: 5,
-          width: 500,
-          height: 500,
-          margin: 10,
+          width: "50vw",
+          height: "50vh",
+          margin: 1,
         }}
         container
         direction={"row"}
