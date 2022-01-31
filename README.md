@@ -5,7 +5,7 @@
   <a href="https://www.npmjs.com/package/imgle"><img src="https://flat.badgen.net/npm/license/imgle" alt="imgle license" /></a>
 </p>
 <h3 align="center">
-  <a href="https://stupefied-darwin-37d742.netlify.app/">Demo app</a>
+  <a href="https://imgle.netlify.app/">Demo app</a>
 </h3>
 <p align="center">
   <b>Convert</b>  any image to a twitter blocks emojis (Wordle like text) 
