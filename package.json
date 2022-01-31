@@ -1,8 +1,9 @@
 {
   "name": "imgle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert any image to a twitter blocks emojis (wordle like text) ",
   "main": "index.js",
+  "types": "main.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
