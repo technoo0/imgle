@@ -1,6 +1,6 @@
 {
   "name": "imgle",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "convert any image to a twitter blocks emojis (wordle like text) ",
   "main": "index.js",
   "types": "main.d.ts",

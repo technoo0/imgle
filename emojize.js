@@ -40,7 +40,7 @@ const Pixel2Emoji = (ImageArr) => {
   for (let y = 0; y < hight; y += 1) {
     row = [];
     for (let x = 0; x < width; x += 1) {
-      row.push(convertPixelToEmoji(ImageArr[x][y]));
+      row.push(convertPixelToEmoji(ImageArr[y][x]));
     }
     NewImage.push(row);
   }
@@ -55,7 +55,7 @@ const Arr2Text = (Arr) => {
   for (let y = 0; y < hight; y += 1) {
     row = "";
     for (let x = 0; x < width; x += 1) {
-      row += Arr[x][y];
+      row += Arr[y][x];
     }
     text += row + "\n";
   }

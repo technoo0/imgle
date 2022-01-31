@@ -14,7 +14,9 @@ export default function ConvertToText({ file, GoBack }: PropTypes) {
     if (typeof reader.result == "string") {
       const image1 = new Image();
       image1.src = reader.result;
+      console.log(reader.result);
       image1.onload = () => {
+        console.log(image1);
         const [TextArr, Text] = Emojize(image1);
         settext(Text);
         console.log(Text);

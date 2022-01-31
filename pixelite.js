@@ -8,7 +8,7 @@ const getRIOAverage = (ImageArr, rowNumber, columnNumber, ratio) => {
 
   for (let y = columnNumber * ratio; y < (columnNumber + 1) * ratio; y += 1) {
     for (let x = rowNumber * ratio; x < (rowNumber + 1) * ratio; x += 1) {
-      const [r, g, b] = ImageArr[x][y];
+      const [r, g, b] = ImageArr[y][x];
       sum[0] += r;
       sum[1] += g;
       sum[2] += b;
@@ -48,7 +48,7 @@ const convertTo3bits = (ImageArr) => {
   for (let y = 0; y < hight; y += 1) {
     row = [];
     for (let x = 0; x < width; x += 1) {
-      const [r, g, b] = ImageArr[x][y];
+      const [r, g, b] = ImageArr[y][x];
       row.push([r > 127 ? 1 : 0, g > 127 ? 1 : 0, b > 127 ? 1 : 0]);
     }
     NewImage.push(row);

@@ -38,6 +38,7 @@ const GetImage = (image) => {
 
 const Emojize = (image) => {
   const Arr2d = GetImage(image);
+  console.log(Arr2d);
   const pixelitedImage = pixelite(Arr2d);
   const NewImage = convertTo3bits(pixelitedImage);
   const EmojiImage = Pixel2Emoji(NewImage);
