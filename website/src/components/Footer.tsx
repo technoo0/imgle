@@ -9,10 +9,8 @@ export default function Footer() {
         direction={"row"}
         justifyContent={"space-around"}
         alignItems={"center"}
-        spacing={1}
         sx={{
           padding: 2,
-          marginTop: 2,
           backgroundColor: "primary.main",
           position: "fixed",
           left: 0,

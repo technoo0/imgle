@@ -21,12 +21,11 @@ export default function HomePage() {
         direction={"column"}
         justifyContent={"space-between"}
         alignItems={"center"}
-        sx={{ width: "100vw" }}
       >
         <Grid item>
           <ShowCase />
         </Grid>
-        <Grid item>
+        <Grid item sx={{ width: "90%", marginBottom: 25 }}>
           {file ? (
             <ConvertToText file={file} GoBack={GoBack} />
           ) : (

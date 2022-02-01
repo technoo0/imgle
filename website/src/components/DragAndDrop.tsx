@@ -11,14 +11,19 @@ interface PropTypes {
 
 export default function DragAndDrop({ handleChange, file }: PropTypes) {
   return (
-    <FileUploader handleChange={handleChange} name="file" types={fileTypes}>
+    <FileUploader
+      handleChange={handleChange}
+      name="file"
+      types={fileTypes}
+      style={{ width: "100%" }}
+    >
       <Grid
         sx={{
           border: 3,
           borderStyle: "dashed",
           borderColor: "primary.main",
           borderRadius: 5,
-          width: "50vw",
+          width: "100%",
           height: "50vh",
           margin: 1,
         }}
