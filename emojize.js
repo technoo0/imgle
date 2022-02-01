@@ -24,7 +24,7 @@ const convertPixelToEmoji = (PixelValue) => {
   } else if (!r && g && b) {
     return emojis["blue"];
   } else if (!r && g && !b) {
-    return emojis[green];
+    return emojis["green"];
   } else if (!r && !g && b) {
     return emojis["blue"];
   } else if (!r && !g && !b) {
