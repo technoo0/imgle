@@ -11,9 +11,10 @@
   <b>Convert</b>  any image to a twitter blocks emojis (Wordle like text) 
 </p>
 <p align="center">
-<img src="https://github.com/technoo0/imgle/blob/main/website/src/assets/twitter.png?raw=true" width="200"  />
-<img src="https://github.com/technoo0/imgle/blob/main/website/src/assets/icon.jpg?raw=true" width="200"  />
+<img src="https://user-images.githubusercontent.com/65347532/152048341-183a68da-9bff-446c-af17-572dc95d9357.gif" width="400"  />
+
 </p>
+
 
 ## Getting Started
 
