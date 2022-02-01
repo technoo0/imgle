@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Emojize from "imgle";
+import emoji from "react-easy-emoji";
+import CircularProgress from "@mui/material/CircularProgress";
 import { Grid, Button, Card, CardActionArea, Typography } from "@mui/material";
 interface PropTypes {
   file: null | File;
@@ -55,14 +57,21 @@ export default function ConvertToText({ file, GoBack }: PropTypes) {
             boxShadow: "",
           }}
         >
-          <CardActionArea onClick={copyText}>
-            <pre style={{ margin: 1, textAlign: "center" }}> {text}</pre>
-            <Typography
-              sx={{ color: "black", textAlign: "center", marginBottom: 1 }}
-            >
-              Press to copy
-            </Typography>
-          </CardActionArea>
+          {text ? (
+            <CardActionArea onClick={copyText}>
+              <pre style={{ margin: 1, textAlign: "center" }}>
+                {" "}
+                {emoji("\n" + text)}
+              </pre>
+              <Typography
+                sx={{ color: "black", textAlign: "center", marginBottom: 1 }}
+              >
+                Press to copy
+              </Typography>
+            </CardActionArea>
+          ) : (
+            <CircularProgress />
+          )}
         </Card>
       </Grid>
       <Grid item sx={{ marginTop: 1 }}>
